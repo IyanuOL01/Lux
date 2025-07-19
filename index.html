@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxvia Inspectors | Professional Home Inspection Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.cdnfonts.com/css/bodonitown" rel="stylesheet">
+    <script>
+              tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1a365d',
+                        secondary: '#2c5282',
+                        accent: '#4299e1',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center luxvia">
+                        <img src="yg.png" 
+                        alt="Luxvia logo"
+                        class="luxvia-logo"></img>
+                        <p class="luxvia">Luxvia Inspectors</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-primary hover:text-accent transition">Services</a>
+                    <a href="#about" class="text-primary hover:text-accent transition">About</a>
+                    <a href="#testimonials" class="text-primary hover:text-accent transition">Testimonials</a>
+                    <a href="#contact" class="text-primary hover:text-accent transition">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-primary focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="#services" class="block py-2 text-primary hover:text-accent transition">Services</a>
+                <a href="#about" class="block py-2 text-primary hover:text-accent transition">About</a>
+                <a href="#testimonials" class="block py-2 text-primary hover:text-accent transition">Testimonials</a>
+                <a href="#contact" class="block py-2 text-primary hover:text-accent transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-20 md:py-32">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Professional Property Inspections You Can Trust</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Comprehensive home inspections with detailed reports to protect your investment and give you peace of mind.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact" class="bg-accent hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">Schedule Inspection</a>
+                <a href="#services" class="bg-white hover:bg-gray-100 text-primary font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">Our Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-gray-50 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-primary mb-2">50+</div>
+                    <div class="text-gray-600">Inspections Completed</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-primary mb-2">3+</div>
+                    <div class="text-gray-600">Years of Experience</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-primary mb-2">99%</div>
+                    <div class="text-gray-600">Client Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Our Inspection Services</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We offer comprehensive inspection services to meet all your property evaluation needs.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-gray-50 rounded-lg p-8 hover:shadow-xl transition duration-300">
+                    <div class="feature-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3 text-center">Residential Inspections</h3>
+                    <p class="text-gray-600 text-center">Thorough evaluation of single-family homes, condos, and townhouses to identify potential issues before purchase.</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-gray-50 rounded-lg p-8 hover:shadow-xl transition duration-300">
+                    <div class="feature-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3 text-center">Commercial Inspections</h3>
+                    <p class="text-gray-600 text-center">Detailed assessment of commercial properties including structural integrity, electrical, plumbing, and HVAC systems.</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-gray-50 rounded-lg p-8 hover:shadow-xl transition duration-300">
+                    <div class="feature-icon">
+                        <i class="fas fa-umbrella"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3 text-center">Pre-Listing Inspections</h3>
+                    <p class="text-gray-600 text-center">Identify and address potential issues before listing your property to streamline the selling process.</p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="bg-gray-50 rounded-lg p-8 hover:shadow-xl transition duration-300">
+                    <div class="feature-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3 text-center">Mold & Moisture</h3>
+                    <p class="text-gray-600 text-center">Specialized inspection to detect mold growth, water damage, and moisture issues that could affect health and structure.</p>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="bg-gray-50 rounded-lg p-8 hover:shadow-xl transition duration-300">
+                    <div class="feature-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3 text-center">Radon Testing</h3>
+                    <p class="text-gray-600 text-center">Professional radon gas testing to ensure your property meets safety standards for this hazardous substance.</p>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="bg-gray-50 rounded-lg p-8 hover:shadow-xl transition duration-300">
+                    <div class="feature-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3 text-center">Termite & Pest</h3>
+                    <p class="text-gray-600 text-center">Inspection for wood-destroying organisms and pest infestations that could compromise your property's integrity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Property inspector at work" 
+                         class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">About Luxvia Inspectors</h2>
+                    <p class="text-gray-600 mb-6">Founded in 2022, Luxvia inspectors has been providing trusted property inspection services to homeowners, buyers, and real estate professionals throughout the region. Our certified inspectors bring decades of combined experience in construction, engineering, and home inspection.</p>
+                    <p class="text-gray-600 mb-8">We pride ourselves on thoroughness, attention to detail, and clear communication. Our comprehensive reports include detailed findings, photographs, and recommendations to help you make informed decisions about your property.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-check-circle text-accent text-xl"></i>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700 font-medium">Licensed & Certified Inspectors</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-check-circle text-accent text-xl"></i>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700 font-medium">Detailed Digital Reports with Photos</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-check-circle text-accent text-xl"></i>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700 font-medium">Visit the Property Physically</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-check-circle text-accent text-xl"></i>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700 font-medium">Verify GPS Location and Access Roads</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-check-circle text-accent text-xl"></i>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700 font-medium">Send You a Branded Inspection Report Within 24-48 Hours</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-check-circle text-accent text-xl"></i>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700 font-medium">Option For Live Video Call During Inspection</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-check-circle text-accent text-xl"></i>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700 font-medium">Available 7 Days a Week</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">What Our Clients Say</h2>
+                <p class="text-gray-300 max-w-2xl mx-auto">Don't just take our word for it - hear from our satisfied customers.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-secondary rounded-lg p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="ml-4">
+                            <div class="font-bold">Bello A.</div>
+                            <div class="text-accent">Home Buyer</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"The inspection was incredibly thorough. The inspector took time to explain everything and the report was so detailed with photos of every issue. It helped us negotiate a better price on our dream home!"</p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-secondary rounded-lg p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="ml-4">
+                            <div class="font-bold">Michael T.</div>
+                            <div class="text-accent">Real Estate Agent</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"I recommend Luxvia Inspectors to all my clients. Their reports are comprehensive yet easy to understand, and their inspectors are professional and knowledgeable. They've helped my clients avoid costly mistakes."</p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-secondary rounded-lg p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="ml-4">
+                            <div class="font-bold">Isreal J.</div>
+                            <div class="text-accent">Home Seller</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"Getting a pre-listing inspection was the best decision. We fixed minor issues before putting our house on the market, and it sold in just 3 days at asking price! The inspection gave buyers confidence in our property."</p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-accent text-white background">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready for Your Property Inspection?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Schedule your inspection today and gain peace of mind about your property investment.</p>
+            <a href="#contact" class="bg-white hover:bg-gray-100 text-primary font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105 inline-block">Get Started Now</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row">
+                <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">Contact Us</h2>
+                    <p class="text-gray-600 mb-8">Have questions or ready to schedule an inspection? Reach out to us using the form or contact information below.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-map-marker-alt text-accent text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold text-primary">Our Office</h3>
+                                <p class="text-gray-600">Meridian, Opposite Dynamic pillars Montessori school, Apata<br>Ibadan, Oyo State</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-phone-alt text-accent text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold text-primary">Phone</h3>
+                                <p class="text-gray-600">(+234) 81-6651-9292</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-envelope text-accent text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold text-primary">Email</h3>
+                                <p class="text-gray-600">Luxvia.inspectors@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <h3></h3>
+                                <i class="fas fa-clock text-accent text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold text-primary">Hours</h3>
+                                <p class="text-gray-600">Monday - Sunday: 7:00 AM - 7:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-gray-50 rounded-lg p-8 shadow-md">
+                        <h3 class="text-2xl font-bold text-primary mb-6">Send Us a Message</h3>
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                                <input type="hidden" name="access_key" value="a952cab8-e564-4f55-b020-e91184257953">
+                                <input type="text" id="name" name='first_name' class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Phone</label>
+                                <input type="tel" id="phone" name="phone_number" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="service" class="block text-gray-700 font-medium mb-2">Service Needed</label>
+                                <select id="service" name="service" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent">
+                                    <option>Residential Inspection</option>
+                                    <option>Commercial Inspection</option>
+                                    <option>Pre-Listing Inspection</option>
+                                    <option>Mold & Moisture Inspection</option>
+                                    <option>Radon Testing</option>
+                                    <option>Termite & Pest Inspection</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                                <textarea id="message" name="Description" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-accent hover:bg-blue-600 text-white font-bold py-3 px-4 rounded-lg transition duration-300">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <div class="flex items-center mb-4">
+                        <img src="yg.png"
+                        alt="Luxvia logo"
+                        class="luxvia-logo"></img>
+                        <p class="font-bold text-xl luxvia"></p>Luxvia Inspections</span>
+                    </div>
+                    <p class="text-gray-300 max-w-xs">Luxvia Inspectors operates under the legal scope of Luxvia Cosmopolitan Limited, as registered with the Corporate Affairs Commission (CAC), to provide professional property consultancy and inspection services in accordance with our approved business objectives.</p>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#services" class="text-gray-300 hover:text-white transition">Services</a></li>
+                            <li><a href="#about" class="text-gray-300 hover:text-white transition">About Us</a></li>
+                            <li><a href="#testimonials" class="text-gray-300 hover:text-white transition">Testimonials</a></li>
+                            <li><a href="#contact" class="text-gray-300 hover:text-white transition">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Services</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-300 hover:text-white transition">Residential</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition">Commercial</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition">Pre-Listing</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition">Specialty Inspections</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Connect</h3>
+                        <div class="flex space-x-4">
+                            <a href="https://www.tiktok.com/@luxvia.interiors?_t=ZM-8xyRgYii2P2&_r=1" class="text-gray-300 hover:text-white transition text-xl"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://www.instagram.com/_luxvia_inspectors?igsh=M3hpd3F5azBmdzdh"  class="text-gray-300 hover:text-white transition text-xl"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Luxvia Inspectors. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
