@@ -6,7 +6,7 @@
 }
 
 .luxvia {
-  color: #0b03d6;
+  color: #193864;
   font-family: bodonitown;
   font-size: 27px;
 }
@@ -41,4 +41,5 @@
 .testimonial-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+
 }
