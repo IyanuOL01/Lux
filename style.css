@@ -108,3 +108,52 @@
 .green{
   background:#193864;
 }
+
+.card-body{
+  padding:30px 25px 35px;
+}
+
+.card-body h1{
+  font-size:45px;
+  margin-bottom:18px;
+  color:#111;
+}
+
+.card-body ul{
+  list-style:none;
+  margin-bottom:25px;
+}
+
+.card-body ul li{
+  margin:10px 0;
+  color:#444;
+  font-size:14px;
+}
+
+.btn{
+  border:none;
+  padding:12px 28px;
+  border-radius:12px;
+  color:#fff;
+  font-size:14px;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s ease;
+}
+
+.red-btn{
+  background:#4299e1;
+}
+
+.blue-btn{
+  background:#1e88e5;
+}
+
+.green-btn{
+  background:#4299e1;
+}
+
+.btn:hover{
+  transform:translateY(-3px);
+  opacity:0.9;
+}
